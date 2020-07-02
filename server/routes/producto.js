@@ -126,6 +126,7 @@ app.post('/productos', verificaToken, (req, res) => {
     let producto = new Producto({
         nombre: body.nombre,
         descripcion: body.descripcion,
+        img: body.img,
         precioUni: body.precioUni,
         categoria: body.categoria,
         usuario: req.usuario._id
